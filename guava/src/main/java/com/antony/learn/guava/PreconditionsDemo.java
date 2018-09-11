@@ -13,6 +13,6 @@ public class PreconditionsDemo {
         Preconditions.checkArgument(age >= 18 && age < 99, "age must in range (18,99)");
         Preconditions.checkArgument(desc !=null && desc.length() < 10, "desc too long, max length is ", 10);
 
-        //do things
+        //pojo things
     }
 }

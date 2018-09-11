@@ -41,9 +41,9 @@ public class CyclicBarrierThread extends Thread
             }
         };
         CyclicBarrier cb = new CyclicBarrier(3, runnable);
-        CyclicBarrierThread cbt0 = new CyclicBarrierThread(cb, 3);
-        CyclicBarrierThread cbt1 = new CyclicBarrierThread(cb, 6);
-        CyclicBarrierThread cbt2 = new CyclicBarrierThread(cb, 9);
+        CyclicBarrierThread cbt0 = new CyclicBarrierThread(cb, 1);
+        CyclicBarrierThread cbt1 = new CyclicBarrierThread(cb, 2);
+        CyclicBarrierThread cbt2 = new CyclicBarrierThread(cb, 3);
         cbt0.start();
         cbt1.start();
         cbt2.start();
